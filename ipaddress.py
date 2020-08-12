@@ -5,7 +5,7 @@ import phonenumbers
 from phonenumbers import carrier
 from telebot.apihelper import ApiException
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton,ReplyKeyboardMarkup,ReplyKeyboardRemove,KeyboardButton
-token="1393190801:AAFSRCGOQAajiyY7SE5kxTDTcaPDecOQAjs"
+token="s"
 bot=telebot.TeleBot(token)
 
 '''server=Flask(__name__)'''
