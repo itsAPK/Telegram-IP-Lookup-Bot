@@ -9,7 +9,7 @@ bot=telebot.TeleBot(token)
 '''server=Flask(__name__)'''
 
 def start_markup():
-    markup = ReplyKeyboardMarkup()
+    markup = ReplyKeyboardMarkup(resize_keyboard=True)
     markup.row_width = 2
     a=KeyboardButton('🔎 IP Lookup')
     markup.row(a)
