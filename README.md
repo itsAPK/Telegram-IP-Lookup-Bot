@@ -8,4 +8,4 @@ IP Lookup API : http://ip-api.com
 
 #ScreenShot:
 
-<img src="https://raw.githubusercontent.com/my-org/assets/master/folder/Screenshot (791).png">
+<img src="https://github.com/itsAPK/Telegram-IP-Lookup-Bot/blob/master/Screenshot%20(791).png">
