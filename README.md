@@ -8,4 +8,4 @@ IP Lookup API : http://ip-api.com
 
 #ScreenShot:
 
-![alt text](https://raw.githubusercontent.com/my-org/assets/master/folder/Screenshot (791).png)
+<img src="https://raw.githubusercontent.com/my-org/assets/master/folder/Screenshot (791).png">
