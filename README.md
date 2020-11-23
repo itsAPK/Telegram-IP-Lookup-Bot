@@ -12,5 +12,6 @@ Simple Python Telegram bot which Gives Details of Given IP Address and search su
 
 # Credits,
 
-[pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) : A telegram bot API python library<br/>
-[ip-api](http://ip-api.com) : IP address lookup API
+[pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) : A telegram bot API python library.<br/>
+[ip-api](http://ip-api.com) : IP address lookup API.<br/>
+[dnscan](https://github.com/rbsec/dnscan.git) : python wordlist-based DNS subdomain.
