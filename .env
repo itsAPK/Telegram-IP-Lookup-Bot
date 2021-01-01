@@ -1,1 +1,0 @@
-export BOT_TOKEN=""
