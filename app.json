@@ -1,15 +1,8 @@
 {
   "name": "Telegram IP Lookup Bot",
   "description": "IP lookup",
-   "keywords": [
-    "telegram"
-  ],
   "repository": "https://github.com/itsAPK/Telegram-IP-Lookup-Bot.git",
   "env": {
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
-      "value": "ANYTHING"
-      },
       "BOT TOKEN": {
       "description": "Get this value from @BotFather"
       },
