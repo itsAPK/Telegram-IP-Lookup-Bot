@@ -3,9 +3,8 @@
   "description": "IP lookup",
   "repository": "https://github.com/itsAPK/Telegram-IP-Lookup-Bot.git",
   "env": {
-       "WEBHOOK": {
-      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
-      "value": "ANYTHING"
+       "APP_NAME": {
+         "description": "Heroku App Name"
       },
       "BOT_TOKEN": {
       "description": "Get this value from @BotFather"
