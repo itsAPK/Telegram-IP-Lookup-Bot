@@ -21,6 +21,7 @@
       },
       "BOT TOKEN": {
       "description": "Get this value from @BotFather"
+      },
   "buildpacks": [{
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
   }, {
