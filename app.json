@@ -17,9 +17,5 @@
       "description": "Get this value from @BotFather"
       }
   },
-   "buildpacks": [
-    {
-      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
-    }
-  ]
+   "buildpacks": []
 }
