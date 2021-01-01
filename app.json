@@ -2,6 +2,13 @@
   "name": "Telegram IP Lookup Bot",
   "description": "IP lookup",
   "repository": "https://github.com/itsAPK/Telegram-IP-Lookup-Bot.git",
+  "image": "heroku/python",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
   "env": {
        "APP_NAME": {
          "description": "Heroku App Name"
