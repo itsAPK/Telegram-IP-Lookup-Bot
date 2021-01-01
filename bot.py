@@ -2,11 +2,13 @@ import requests
 import telebot
 import time
 from telebot.apihelper import ApiException
+from flask import Flask, request
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton,ReplyKeyboardMarkup,ReplyKeyboardRemove,KeyboardButton
-token="1393190801:AAFSRCGOQAajiyY7SE5kxTDTcaPDecOQAjs"
-bot=telebot.TeleBot(token)
+import os 
+TOKEN=os.environ.get("BOT_TOKEN", None)
+bot=telebot.TeleBot(TOKEN)
 
-'''server=Flask(__name__)'''
+server=Flask(__name__)
 
 def start_markup():
     markup = ReplyKeyboardMarkup(resize_keyboard=True)
@@ -78,8 +80,18 @@ def domain(message):
     data="✅ Domain : {}\n➖Total Subdomains : {}\n\n⚠️ Discovered subdomains:\n{}".format(message.text,len(total),urls)   
     bot.send_message(message.chat.id,data)
 
-while True:
-	try:
-		bot.infinity_polling(True)
-	except Exception:
-		time.sleep(1)
+@server.route('/' + TOKEN, methods=['POST'])
+def getMessage():
+    bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
+    return "!", 200
+
+
+@server.route("/")
+def webhook():
+    bot.remove_webhook()
+    bot.set_webhook(url=os.environ.get('WEBHOOK')+TOKEN)
+    return "!", 200
+
+
+if __name__ == "__main__":
+    server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
