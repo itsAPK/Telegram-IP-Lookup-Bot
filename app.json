@@ -11,4 +11,15 @@
       "description": "Get this value from @BotFather"
       }
   }
+   "buildpacks": [
+    {
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+    }
+  ],
+   "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
 }
