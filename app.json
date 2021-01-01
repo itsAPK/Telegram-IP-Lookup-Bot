@@ -16,5 +16,8 @@
       "BOT_TOKEN": {
       "description": "Get this value from @BotFather"
       }
-  }
+  },
+   "buildpacks": [{
+    "url": "heroku/python"
+  }]
 }
