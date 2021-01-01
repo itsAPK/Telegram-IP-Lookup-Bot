@@ -3,7 +3,7 @@ import telebot
 import time
 from telebot.apihelper import ApiException
 from flask import Flask, request
-from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton,ReplyKeyboardMarkup,ReplyKeyboardRemove,KeyboardButton
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton,ReplyKeyboardMarkup,ReplyKeyboardRemove,KeyboardButton,Update
 import os 
 TOKEN=os.environ.get("BOT_TOKEN", None)
 bot=telebot.TeleBot(TOKEN)
@@ -82,7 +82,7 @@ def domain(message):
 
 @server.route('/' + TOKEN, methods=['POST'])
 def getMessage():
-    bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
+    bot.process_new_updates([Update.de_json(request.stream.read().decode("utf-8"))])
     return "!", 200
 
 
