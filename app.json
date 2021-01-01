@@ -1,19 +1,10 @@
 {
   "name": "Telegram IP Lookup Bot",
   "description": "IP lookup",
-  "repository": "https://github.com/itsAPK/Telegram-IP-Lookup-Bot.git",
    "keywords": [
-    "telegram",
-    "best",
-    "indian",
-    "pyrogram",
-    "userbot",
-    "3",
-    "plugin",
-    "modular",
-    "productivity"
+    "telegram"
   ],
-  
+  "repository": "https://github.com/itsAPK/Telegram-IP-Lookup-Bot.git",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -22,11 +13,13 @@
       "BOT TOKEN": {
       "description": "Get this value from @BotFather"
       },
-  "buildpacks": [{
+  "buildpacks": [
+    {
     "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  }, {
+    }, 
+    {
     "url": "heroku/python"
-  }],
+    }],
   "formation": {
     "worker": {
       "quantity": 1,
