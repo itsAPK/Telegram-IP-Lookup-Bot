@@ -10,7 +10,7 @@
 
 Simple Python Telegram bot which Gives Details of Given IP Address and search subdomains of given domain.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![Run on Repl.it](https://repl.it/badge/github/itsAPK/Telegram-IP-Lookup-Bot)](https://repl.it/@SantaCruz/Telegram-IP-Lookup-Bot#bot.py)
 
 # ScreenShot:
 <b>IP Lookup :</b>
