@@ -3,12 +3,6 @@
   "description": "IP lookup",
   "repository": "https://github.com/itsAPK/Telegram-IP-Lookup-Bot.git",
   "image": "heroku/python",
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
   "env": {
        "APP_NAME": {
          "description": "Heroku App Name"
@@ -18,8 +12,15 @@
       }
   },
    "buildpacks": [{
-    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-  },
-  {
-    "url": "heroku/python"}]
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }, 
+        {
+        "url": "heroku/python"
+        }],
+        "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
