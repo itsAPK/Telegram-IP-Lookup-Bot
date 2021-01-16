@@ -1,1 +1,1 @@
-web: python3 bot.py ${PORT}
+bot: python3 bot.py ${PORT}
