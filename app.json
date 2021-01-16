@@ -11,13 +11,13 @@
       "description": "Get this value from @BotFather"
       }
   },
-   "buildpacks": [{
+  "buildpacks": [{
         "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
         }, 
         {
         "url": "heroku/python"
         }],
-        "formation": {
+  "formation": {
         "worker": {
             "quantity": 1,
             "size": "free"
