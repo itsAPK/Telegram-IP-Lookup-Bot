@@ -1,6 +1,7 @@
 # Telegram-IP-Lookup-Bot
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/code-rgb/userge-x)
+[![CodeFactor](https://www.codefactor.io/repository/github/code-rgb/userge-x/badge?&style=flat-square)](https://www.codefactor.io/repository/github/code-rgb/userge-x)
 
 Simple Python Telegram bot which Gives Details of Given IP Address and search subdomains of given domain.
 
