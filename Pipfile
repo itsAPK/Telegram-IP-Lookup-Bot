@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 requests = "*"
 pytelegrambotapi = "*"
+Flask="*"
 
 [requires]
 python_version = "3.8"
